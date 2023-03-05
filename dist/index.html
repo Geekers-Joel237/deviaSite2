@@ -171,8 +171,8 @@
                         <div class="d-grid gap-2">
                     <!-- <a href="#" class="btn btn-outline-primary me-2">Sign
                         In</a> -->
-                    <a  onclick="hello(e);" class="btn btn-primary">
-                        Investisseur</a>
+                            <a class="btn btn-primary">
+                                Investisseur</a>
                 </div>
                     </div>
                 </div>
@@ -730,7 +730,7 @@
                                                             class="testimonial-video-wrapper
                                                             position-relative">
                                                             <img
-                                                                src="assets/img/testimonial/t-1.jpg"
+                                                                src="./images/img_p_1.jpeg"
                                                                 class="img-fluid
                                                                 rounded-custom
                                                                 shadow-lg"
@@ -848,7 +848,7 @@
                                                             class="testimonial-video-wrapper
                                                             position-relative">
                                                             <img
-                                                                src="assets/img/testimonial/t-2.jpg"
+                                                                src="./images/img_p_2.jpeg"
                                                                 class="img-fluid
                                                                 rounded-custom
                                                                 shadow-lg"
@@ -967,7 +967,7 @@
                                                             class="testimonial-video-wrapper
                                                             position-relative">
                                                             <img
-                                                                src="assets/img/testimonial/t-3.jpg"
+                                                                src="./images/devia2.jpeg"
                                                                 class="img-fluid
                                                                 rounded-custom
                                                                 shadow-lg"
@@ -1087,7 +1087,7 @@ administration réseau, installation des cameras ... A travers mon stage à Devi
                                                             class="testimonial-video-wrapper
                                                             position-relative">
                                                             <img
-                                                                src="assets/img/testimonial/t-4.jpg"
+                                                                src="./images/img_p_3.jpeg"
                                                                 class="img-fluid
                                                                 rounded-custom
                                                                 shadow-lg"
@@ -1829,8 +1829,12 @@ administration réseau, installation des cameras ... A travers mon stage à Devi
             var date = new Date().getFullYear();
             document.getElementById('date').innerHTML=date;
 
-            function hello(e) {
-                e.preventDefault();
+            function hello() {
+                console.log(event);
+                event.preventDefault();
+                event.target.classList.remove('ripple-surface');
+                event.target.style.width="";
+                event.target.style.minWidth="";
             }
         </script>
                 <!--endbuild-->

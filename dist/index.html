@@ -171,7 +171,7 @@
                         <div class="d-grid gap-2">
                     <!-- <a href="#" class="btn btn-outline-primary me-2">Sign
                         In</a> -->
-                    <a href="#" onclick="e.preventDefault();" class="btn btn-primary">
+                    <a  onclick="hello(e);" class="btn btn-primary">
                         Investisseur</a>
                 </div>
                     </div>
@@ -1828,6 +1828,10 @@ administration réseau, installation des cameras ... A travers mon stage à Devi
                 <script>
             var date = new Date().getFullYear();
             document.getElementById('date').innerHTML=date;
+
+            function hello(e) {
+                e.preventDefault();
+            }
         </script>
                 <!--endbuild-->
             </body>
